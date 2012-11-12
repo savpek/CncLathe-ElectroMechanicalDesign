@@ -1,0 +1,20 @@
+[Eagle]
+Version="06 03 00"
+Platform="Windows"
+Serial="6E039A1D15-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Users/savpek/Documents/GitHub/CncMill-1uApTTLConverter-PCB/single_ls403_decoder_board/library.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="654 382 1253 781"
+State=2
+Number=0
+
+[Desktop]
+Screen="1920 1200"
+Window="Win_1"
