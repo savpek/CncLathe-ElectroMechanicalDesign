@@ -316,6 +316,16 @@
 </gates>
 <devices>
 <device name="" package="QFP-44">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="4"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="PB5(PCINT13/ICP3/MOSI)" pad="1"/>
+<connect gate="G$1" pin="PB6(PCINT14/OC3A/MISO)" pad="2"/>
+<connect gate="G$1" pin="PB7(PCINT15/OC3B/SCK)" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="XTAL1" pad="8"/>
+<connect gate="G$1" pin="XTAL2" pad="7"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
