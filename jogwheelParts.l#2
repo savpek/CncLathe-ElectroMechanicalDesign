@@ -265,13 +265,13 @@
 <pin name="AVCC" x="55.88" y="-5.08" length="middle" rot="R180"/>
 <pin name="GND@2" x="55.88" y="-157.48" length="middle" rot="R180"/>
 <pin name="AREF" x="55.88" y="-10.16" length="middle" rot="R180"/>
-<pin name="PA7(ADC7/PCINT7)" x="-5.08" y="-81.28" length="middle"/>
-<pin name="PA6(ADC6/PCINT6)" x="-5.08" y="-86.36" length="middle"/>
-<pin name="PA5(ADC5/PCINT5)" x="-5.08" y="-91.44" length="middle"/>
-<pin name="PA4(ADC4/PCINT4)" x="-5.08" y="-96.52" length="middle"/>
-<pin name="PA3(ADC3/PCINT3)" x="-5.08" y="-101.6" length="middle"/>
-<pin name="PA2(ADC2/PCINT2)" x="-5.08" y="-106.68" length="middle"/>
-<pin name="PA1(ADC0/PCINT0)" x="-5.08" y="-111.76" length="middle"/>
+<pin name="PA7(ADC7/PCINT7)" x="-5.08" y="-116.84" length="middle"/>
+<pin name="PA6(ADC6/PCINT6)" x="-5.08" y="-111.76" length="middle"/>
+<pin name="PA5(ADC5/PCINT5)" x="-5.08" y="-106.68" length="middle"/>
+<pin name="PA4(ADC4/PCINT4)" x="-5.08" y="-101.6" length="middle"/>
+<pin name="PA3(ADC3/PCINT3)" x="-5.08" y="-96.52" length="middle"/>
+<pin name="PA2(ADC2/PCINT2)" x="-5.08" y="-91.44" length="middle"/>
+<pin name="PA1(ADC0/PCINT0)" x="-5.08" y="-86.36" length="middle"/>
 <pin name="VCC@2" x="55.88" y="5.08" length="middle" rot="R180"/>
 <pin name="GND@3" x="55.88" y="-162.56" length="middle" rot="R180"/>
 <pin name="PB0(XCK0/T0/PCINT8)" x="-5.08" y="-132.08" length="middle"/>
@@ -284,7 +284,7 @@
 <wire x1="50.8" y1="-172.72" x2="50.8" y2="27.94" width="0.254" layer="94"/>
 <wire x1="50.8" y1="27.94" x2="0" y2="27.94" width="0.254" layer="94"/>
 <text x="0" y="30.48" size="1.27" layer="95">&gt;NAME</text>
-<pin name="PA0(ADC0/PCINT0)" x="-5.08" y="-116.84" length="middle"/>
+<pin name="PA0(ADC0/PCINT0)" x="-5.08" y="-81.28" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>

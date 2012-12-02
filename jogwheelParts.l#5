@@ -316,7 +316,7 @@
 <gate name="G$1" symbol="ATMEGA[164/324/644/644][A/PA]" x="0" y="-27.94"/>
 </gates>
 <devices>
-<device name="" package="QFP-44">
+<device name="TQFP/QFN/MLF" package="QFP-44">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="4"/>
 <connect gate="G$1" pin="AREF" pad="29"/>

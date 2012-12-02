@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -236,55 +236,55 @@
 <text x="11.176" y="0.508" size="1.27" layer="97">&gt;SECOND-AXIS</text>
 </symbol>
 <symbol name="ATMEGA[164/324/644/644][A/PA]">
-<pin name="PB5(PCINT13/ICP3/MOSI)" x="-5.08" y="25.4" length="middle"/>
-<pin name="PB6(PCINT14/OC3A/MISO)" x="-5.08" y="20.32" length="middle"/>
+<pin name="PB5(PCINT13/ICP3/MOSI)" x="-5.08" y="-157.48" length="middle"/>
+<pin name="PB6(PCINT14/OC3A/MISO)" x="-5.08" y="-162.56" length="middle"/>
 <pin name="!RESET" x="55.88" y="25.4" length="middle" rot="R180"/>
-<pin name="PB7(PCINT15/OC3B/SCK)" x="-5.08" y="15.24" length="middle"/>
+<pin name="PB7(PCINT15/OC3B/SCK)" x="-5.08" y="-167.64" length="middle"/>
 <pin name="VCC" x="55.88" y="15.24" length="middle" rot="R180"/>
 <pin name="GND" x="55.88" y="-167.64" length="middle" rot="R180"/>
 <pin name="XTAL2" x="55.88" y="-55.88" length="middle" rot="R180"/>
 <pin name="XTAL1" x="55.88" y="-50.8" length="middle" rot="R180"/>
-<pin name="PD0(PCINT24/RXD0/T3)" x="-5.08" y="5.08" length="middle"/>
-<pin name="PD1(PCINT25/TXD0)" x="-5.08" y="0" length="middle"/>
-<pin name="PD2(PCINT26/RXD1/INT0)" x="-5.08" y="-5.08" length="middle"/>
-<pin name="PD3(PCINT27/TXD1/INT1)" x="-5.08" y="-10.16" length="middle"/>
-<pin name="PD4(PCINT28/XCK1/OC1B)" x="-5.08" y="-15.24" length="middle"/>
-<pin name="PD5(PCINT29/OC1A)" x="-5.08" y="-20.32" length="middle"/>
-<pin name="PD6(PCINT30/OC2B/ICP)" x="-5.08" y="-25.4" length="middle"/>
-<pin name="PD7(PCINT31/OC2A)" x="-5.08" y="-30.48" length="middle"/>
+<pin name="PD0(PCINT24/RXD0/T3)" x="-5.08" y="25.4" length="middle"/>
+<pin name="PD1(PCINT25/TXD0)" x="-5.08" y="20.32" length="middle"/>
+<pin name="PD2(PCINT26/RXD1/INT0)" x="-5.08" y="15.24" length="middle"/>
+<pin name="PD3(PCINT27/TXD1/INT1)" x="-5.08" y="10.16" length="middle"/>
+<pin name="PD4(PCINT28/XCK1/OC1B)" x="-5.08" y="5.08" length="middle"/>
+<pin name="PD5(PCINT29/OC1A)" x="-5.08" y="0" length="middle"/>
+<pin name="PD6(PCINT30/OC2B/ICP)" x="-5.08" y="-5.08" length="middle"/>
+<pin name="PD7(PCINT31/OC2A)" x="-5.08" y="-10.16" length="middle"/>
 <pin name="VCC@1" x="55.88" y="10.16" length="middle" rot="R180"/>
 <pin name="GND@1" x="55.88" y="-152.4" length="middle" rot="R180"/>
-<pin name="PC0(PCINT16/SCL)" x="-5.08" y="-45.72" length="middle"/>
-<pin name="PC1(PCINT17/SDA)" x="-5.08" y="-50.8" length="middle"/>
-<pin name="PC2(PCINT18/TCK)" x="-5.08" y="-55.88" length="middle"/>
-<pin name="PC3(PCINT19/TMS)" x="-5.08" y="-60.96" length="middle"/>
-<pin name="PC4(TDO/PCINT20)" x="-5.08" y="-66.04" length="middle"/>
-<pin name="PC5(TDI/PCINT21)" x="-5.08" y="-71.12" length="middle"/>
-<pin name="PC6(TOSC1/PCINT22)" x="-5.08" y="-76.2" length="middle"/>
-<pin name="PC7(TOSC2/PCINT23)" x="-5.08" y="-81.28" length="middle"/>
-<pin name="AVCC" x="55.88" y="-7.62" length="middle" rot="R180"/>
+<pin name="PC0(PCINT16/SCL)" x="-5.08" y="-25.4" length="middle"/>
+<pin name="PC1(PCINT17/SDA)" x="-5.08" y="-30.48" length="middle"/>
+<pin name="PC2(PCINT18/TCK)" x="-5.08" y="-35.56" length="middle"/>
+<pin name="PC3(PCINT19/TMS)" x="-5.08" y="-40.64" length="middle"/>
+<pin name="PC4(TDO/PCINT20)" x="-5.08" y="-45.72" length="middle"/>
+<pin name="PC5(TDI/PCINT21)" x="-5.08" y="-50.8" length="middle"/>
+<pin name="PC6(TOSC1/PCINT22)" x="-5.08" y="-55.88" length="middle"/>
+<pin name="PC7(TOSC2/PCINT23)" x="-5.08" y="-60.96" length="middle"/>
+<pin name="AVCC" x="55.88" y="-5.08" length="middle" rot="R180"/>
 <pin name="GND@2" x="55.88" y="-157.48" length="middle" rot="R180"/>
-<pin name="AREF" x="55.88" y="-12.7" length="middle" rot="R180"/>
-<pin name="PA7(ADC7/PCINT7)" x="-5.08" y="-101.6" length="middle"/>
-<pin name="PA6(ADC6/PCINT6)" x="-5.08" y="-106.68" length="middle"/>
-<pin name="PA5(ADC5/PCINT5)" x="-5.08" y="-111.76" length="middle"/>
-<pin name="PA4(ADC4/PCINT4)" x="-5.08" y="-116.84" length="middle"/>
-<pin name="PA3(ADC3/PCINT3)" x="-5.08" y="-121.92" length="middle"/>
-<pin name="PA2(ADC2/PCINT2)" x="-5.08" y="-127" length="middle"/>
-<pin name="PA1(ADC0/PCINT0)" x="-5.08" y="-132.08" length="middle"/>
+<pin name="AREF" x="55.88" y="-10.16" length="middle" rot="R180"/>
+<pin name="PA7(ADC7/PCINT7)" x="-5.08" y="-81.28" length="middle"/>
+<pin name="PA6(ADC6/PCINT6)" x="-5.08" y="-86.36" length="middle"/>
+<pin name="PA5(ADC5/PCINT5)" x="-5.08" y="-91.44" length="middle"/>
+<pin name="PA4(ADC4/PCINT4)" x="-5.08" y="-96.52" length="middle"/>
+<pin name="PA3(ADC3/PCINT3)" x="-5.08" y="-101.6" length="middle"/>
+<pin name="PA2(ADC2/PCINT2)" x="-5.08" y="-106.68" length="middle"/>
+<pin name="PA1(ADC0/PCINT0)" x="-5.08" y="-111.76" length="middle"/>
 <pin name="VCC@2" x="55.88" y="5.08" length="middle" rot="R180"/>
 <pin name="GND@3" x="55.88" y="-162.56" length="middle" rot="R180"/>
-<pin name="PB0(XCK0/T0/PCINT8)" x="-5.08" y="-147.32" length="middle"/>
-<pin name="PB1(T1/CLK0/PCINT9)" x="-5.08" y="-152.4" length="middle"/>
-<pin name="PB2(AIN0/INT2/PCINT10)" x="-5.08" y="-157.48" length="middle"/>
-<pin name="PB3(AIN1/OC0A/PCINT11)" x="-5.08" y="-162.56" length="middle"/>
-<pin name="PB4(!SS!/OC0B/PCINT12)" x="-5.08" y="-167.64" length="middle"/>
+<pin name="PB0(XCK0/T0/PCINT8)" x="-5.08" y="-132.08" length="middle"/>
+<pin name="PB1(T1/CLK0/PCINT9)" x="-5.08" y="-137.16" length="middle"/>
+<pin name="PB2(AIN0/INT2/PCINT10)" x="-5.08" y="-142.24" length="middle"/>
+<pin name="PB3(AIN1/OC0A/PCINT11)" x="-5.08" y="-147.32" length="middle"/>
+<pin name="PB4(!SS!/OC0B/PCINT12)" x="-5.08" y="-152.4" length="middle"/>
 <wire x1="0" y1="27.94" x2="0" y2="-172.72" width="0.254" layer="94"/>
 <wire x1="0" y1="-172.72" x2="50.8" y2="-172.72" width="0.254" layer="94"/>
 <wire x1="50.8" y1="-172.72" x2="50.8" y2="27.94" width="0.254" layer="94"/>
 <wire x1="50.8" y1="27.94" x2="0" y2="27.94" width="0.254" layer="94"/>
 <text x="0" y="30.48" size="1.27" layer="95">&gt;NAME</text>
-<pin name="PA0(ADC0/PCINT0)" x="-5.08" y="-137.16" length="middle"/>
+<pin name="PA0(ADC0/PCINT0)" x="-5.08" y="-116.84" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
