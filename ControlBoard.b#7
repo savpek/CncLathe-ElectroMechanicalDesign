@@ -1932,12 +1932,12 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="jogwheelParts" package="JOYSTICK-RKJXK122000D" value="JOYSTIC-XYRKJXK122000D" x="15.1" y="15">
+<element name="JOYSTICK1" library="jogwheelParts" package="JOYSTICK-RKJXK122000D" value="JOYSTIC-XYRKJXK122000D" x="15.1" y="15">
 <attribute name="SECOND-AXIS" value="Y" x="15.1" y="15" size="1.778" layer="27" font="vector" display="off"/>
 <attribute name="FIRST-AXIS" value="X" x="15.1" y="15" size="1.778" layer="27" font="vector" display="off"/>
 </element>
 <element name="U$2" library="jogwheelParts" package="QFP-44" value="ATMEGA[164/324/644/644][A/PA]TQFP/QFN/MLF" x="38.4" y="33.5"/>
-<element name="SPI" library="connectors" package="2X3_ISP" value="CONNECTOR_6PIN2X3_ISP" x="-2.7" y="6.5"/>
+<element name="ISP" library="connectors" package="2X3_ISP" value="CONNECTOR_6PIN2X3_ISP" x="-2.7" y="6.5"/>
 <element name="DEBUG" library="connectors" package="1X3_USART" value="CONNECTOR_3PINUSART" x="-2" y="-1.9">
 <attribute name="PIN1" value="TXD" x="-2" y="-1.9" size="1.778" layer="27" display="off"/>
 <attribute name="PIN2" value="RXD" x="-2" y="-1.9" size="1.778" layer="27" display="off"/>
@@ -1975,6 +1975,10 @@ design rules under a new name.</description>
 <element name="BTNCON6" library="connectors" package="1X2_WIRE" value="CONNECTOR_2PIN1X2_WIRE" x="-3.3" y="-50.5">
 <attribute name="PIN1" value="1" x="-3.3" y="-50.5" size="1.778" layer="27" font="vector" display="off"/>
 <attribute name="PIN2" value="2" x="-3.3" y="-50.5" size="1.778" layer="27" font="vector" display="off"/>
+</element>
+<element name="JOYSTICK2" library="jogwheelParts" package="JOYSTICK-RKJXK122000D" value="JOYSTIC-XYRKJXK122000D" x="-17.5" y="-39.7">
+<attribute name="SECOND-AXIS" value="A" x="-17.5" y="-39.7" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="FIRST-AXIS" value="Z" x="-17.5" y="-39.7" size="1.778" layer="27" font="vector" display="off"/>
 </element>
 </elements>
 <signals>
@@ -2048,19 +2052,23 @@ design rules under a new name.</description>
 </signal>
 <signal name="PORTA0">
 <contactref element="U$2" pad="37"/>
-<contactref element="U$1" pad="Y2"/>
+<contactref element="JOYSTICK1" pad="Y2"/>
 <wire x1="24.85" y1="15" x2="31.65" y2="35.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PORTA1">
 <contactref element="U$2" pad="36"/>
-<contactref element="U$1" pad="X2"/>
+<contactref element="JOYSTICK1" pad="X2"/>
 <wire x1="15.1" y1="24.75" x2="31.64" y2="35.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PORTA2">
 <contactref element="U$2" pad="35"/>
+<contactref element="JOYSTICK2" pad="Y2"/>
+<wire x1="-7.75" y1="-39.7" x2="31.65" y2="36.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PORTA3">
 <contactref element="U$2" pad="34"/>
+<contactref element="JOYSTICK2" pad="X2"/>
+<wire x1="-17.5" y1="-29.95" x2="31.65" y2="37.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PORTA4">
 <contactref element="U$2" pad="33"/>
@@ -2091,21 +2099,21 @@ design rules under a new name.</description>
 </signal>
 <signal name="PORTB5">
 <contactref element="U$2" pad="1"/>
-<contactref element="SPI" pad="MOSI"/>
+<contactref element="ISP" pad="MOSI"/>
 <wire x1="-1.43" y1="3.96" x2="34.4" y2="27.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PORTB6">
 <contactref element="U$2" pad="2"/>
-<contactref element="SPI" pad="MISO"/>
+<contactref element="ISP" pad="MISO"/>
 <wire x1="-3.97" y1="6.5" x2="35.2" y2="27.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!RESET">
 <contactref element="U$2" pad="4"/>
-<contactref element="SPI" pad="RST"/>
+<contactref element="ISP" pad="RST"/>
 <wire x1="-3.97" y1="1.42" x2="36.8" y2="27.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PORTB7">
-<contactref element="SPI" pad="SCK"/>
+<contactref element="ISP" pad="SCK"/>
 <contactref element="U$2" pad="3"/>
 <wire x1="-3.97" y1="3.96" x2="36" y2="27.25" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2119,13 +2127,15 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="20"/>
 <contactref element="C4" pad="1"/>
 <contactref element="FERRITE0" pad="2"/>
-<contactref element="SPI" pad="V+"/>
+<contactref element="ISP" pad="V+"/>
 <contactref element="U$2" pad="38"/>
 <contactref element="U$2" pad="17"/>
 <contactref element="U$2" pad="5"/>
-<contactref element="U$1" pad="Y1"/>
-<contactref element="U$1" pad="X1"/>
+<contactref element="JOYSTICK1" pad="Y1"/>
+<contactref element="JOYSTICK1" pad="X1"/>
 <contactref element="C2" pad="1"/>
+<contactref element="JOYSTICK2" pad="X1"/>
+<contactref element="JOYSTICK2" pad="Y1"/>
 <wire x1="37.6" y1="27.25" x2="45.15" y2="33.5" width="0" layer="19" extent="1-1"/>
 <wire x1="31.65" y1="34.3" x2="37.6" y2="27.25" width="0" layer="19" extent="1-1"/>
 <wire x1="24.85" y1="17.5" x2="37.6" y2="27.25" width="0" layer="19" extent="1-1"/>
@@ -2136,6 +2146,8 @@ design rules under a new name.</description>
 <wire x1="-4.95" y1="-16.6" x2="-1.475" y2="-12.425" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.95" y1="-21.2" x2="-4.95" y2="-16.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.45" y1="-25" x2="-4.95" y2="-21.2" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.75" y1="-37.2" x2="-2.45" y2="-25" width="0" layer="19" extent="1-1"/>
+<wire x1="-20" y1="-29.95" x2="-7.75" y2="-37.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="U$2" pad="18"/>
@@ -2152,16 +2164,18 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C4" pad="2"/>
-<contactref element="SPI" pad="GND"/>
+<contactref element="ISP" pad="GND"/>
 <contactref element="DEBUG" pad="GND"/>
-<contactref element="U$1" pad="Y3"/>
-<contactref element="U$1" pad="X3"/>
+<contactref element="JOYSTICK1" pad="Y3"/>
+<contactref element="JOYSTICK1" pad="X3"/>
 <contactref element="BTNCON1" pad="1"/>
 <contactref element="BTNCON6" pad="1"/>
 <contactref element="BTNCON5" pad="1"/>
 <contactref element="BTNCON4" pad="1"/>
 <contactref element="BTNCON3" pad="1"/>
 <contactref element="BTNCON2" pad="1"/>
+<contactref element="JOYSTICK2" pad="X3"/>
+<contactref element="JOYSTICK2" pad="Y3"/>
 <wire x1="38.4" y1="39.75" x2="45.15" y2="34.3" width="0" layer="19" extent="1-1"/>
 <wire x1="31.65" y1="33.5" x2="38.4" y2="39.75" width="0" layer="19" extent="1-1"/>
 <wire x1="38.4" y1="27.25" x2="31.65" y2="33.5" width="0" layer="19" extent="1-1"/>
@@ -2183,8 +2197,10 @@ design rules under a new name.</description>
 <wire x1="-4.57" y1="-32.9" x2="-4.57" y2="-28.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.57" y1="-37.3" x2="-4.57" y2="-32.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.57" y1="-41.7" x2="-4.57" y2="-37.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.75" y1="-42.2" x2="-4.57" y2="-41.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.57" y1="-46.1" x2="-4.57" y2="-41.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.57" y1="-50.5" x2="-4.57" y2="-46.1" width="0" layer="19" extent="1-1"/>
+<wire x1="-15" y1="-29.95" x2="-4.57" y2="-28.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="IC1" pad="15"/>
