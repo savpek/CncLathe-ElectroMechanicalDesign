@@ -6748,8 +6748,8 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <instance part="GND8" gate="1" x="-182.88" y="-129.54"/>
 <instance part="CON1" gate="G$1" x="-408.94" y="-5.08" rot="MR0"/>
 <instance part="GND9" gate="1" x="-401.32" y="-27.94"/>
-<instance part="R1" gate="G$1" x="-254" y="-5.08" rot="R90"/>
-<instance part="R2" gate="G$1" x="-243.84" y="-5.08" rot="R90"/>
+<instance part="R1" gate="G$1" x="-254" y="-10.16" rot="R90"/>
+<instance part="R2" gate="G$1" x="-243.84" y="-10.16" rot="R90"/>
 </instances>
 <busses>
 <bus name="PORTB[0..7],PORTA[0..7],PORTC[0..7],PORTD[0..7],!RESET">
@@ -7357,7 +7357,6 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <wire x1="-287.02" y1="-15.24" x2="-279.4" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-279.4" y1="-15.24" x2="-254" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-254" y1="-15.24" x2="-254" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7365,7 +7364,7 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <pinref part="IC1" gate="G$1" pin="CBUS1"/>
 <wire x1="-287.02" y1="-20.32" x2="-279.4" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="-243.84" y1="-10.16" x2="-243.84" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-243.84" y1="-15.24" x2="-243.84" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-243.84" y1="-20.32" x2="-279.4" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>

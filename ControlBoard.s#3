@@ -9003,6 +9003,10 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <pinref part="U$2" gate="G$1" pin="AVCC"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="5.08" x2="-48.26" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="AREF"/>
+<wire x1="-71.12" y1="0" x2="-48.26" y2="0" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="0" x2="-48.26" y2="5.08" width="0.1524" layer="91"/>
+<junction x="-48.26" y="5.08"/>
 </segment>
 </net>
 <net name="N$5" class="0">

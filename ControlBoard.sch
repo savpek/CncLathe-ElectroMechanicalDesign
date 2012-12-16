@@ -8433,8 +8433,8 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="U$1" library="jogwheelParts" deviceset="LED" device=""/>
-<part name="U$3" library="jogwheelParts" deviceset="LED" device=""/>
+<part name="RX" library="jogwheelParts" deviceset="LED" device=""/>
+<part name="TX" library="jogwheelParts" deviceset="LED" device=""/>
 <part name="P+7" library="schematic_supply" deviceset="+5V" device=""/>
 </parts>
 <sheets>
@@ -8592,8 +8592,8 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <attribute name="MF" x="-48.26" y="25.4" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="-48.26" y="25.4" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$1" gate="G$1" x="-254" y="5.08" rot="R180"/>
-<instance part="U$3" gate="G$1" x="-243.84" y="5.08" rot="R180"/>
+<instance part="RX" gate="G$1" x="-254" y="5.08" rot="R180"/>
+<instance part="TX" gate="G$1" x="-243.84" y="5.08" rot="R180"/>
 <instance part="P+7" gate="1" x="-254" y="25.4"/>
 </instances>
 <busses>
@@ -9048,10 +9048,10 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <junction x="-58.42" y="25.4"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="A"/>
+<pinref part="TX" gate="G$1" pin="A"/>
 <wire x1="-243.84" y1="10.16" x2="-243.84" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-243.84" y1="15.24" x2="-254" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="A"/>
+<pinref part="RX" gate="G$1" pin="A"/>
 <wire x1="-254" y1="15.24" x2="-254" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-254" y1="15.24" x2="-254" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-254" y="15.24"/>
@@ -9260,14 +9260,14 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="K"/>
+<pinref part="RX" gate="G$1" pin="K"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="-254" y1="0" x2="-254" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="K"/>
+<pinref part="TX" gate="G$1" pin="K"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-243.84" y1="0" x2="-243.84" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
